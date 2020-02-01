@@ -1,0 +1,6 @@
+<div id="busSelect" class="form-group">
+    <label>Select Bus</label>
+    <select #busSelect (change)="onSelectionChanged(busSelect.value)" class="form-control">
+        <option *ngFor="let number of busNumbers">{{number}}</option>
+    </select>
+</div>

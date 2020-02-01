@@ -1,0 +1,7 @@
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [styles]="theme">
+    <agm-marker *ngFor="let bus of busses | busNumber:busStorage.selectedBus "
+    [latitude]="bus.latitude" 
+    [longitude]="bus.longitude"
+    [label]="bus.routeCode">
+    </agm-marker>
+</agm-map>
